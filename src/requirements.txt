@@ -1,0 +1,13 @@
+torch
+langchain==0.2
+langchain_community
+python-dotenv
+Flask
+streamlit_mic_recorder
+deepface
+tensorflow
+streamlit
+pytesseract
+tesseract
+llama-cpp-python
+numpy==1.26.4

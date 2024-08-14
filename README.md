@@ -9,17 +9,18 @@ Although it does not add any potential values to the business or solves a real t
     - Zero 0️⃣ cost 💸 on the inference. 
     - Captures the emotion in various mediums (Text, voice, image, attachment)
     - Runs based on open source models🤖 (Mistal-7B)
-    - OCR: Capable to extract emotions from hand written ✍🏼 images
+    - Capable to extract emotions from hand written ✍🏼 images via OCR.
 
 To keep the solution very simple, the music generation does not honour the languages, choice of music, artist selection etc.
 
 ## Technical specifications:
-    * Language: Python. 
+    * Language: Python 🐍
     * Model: mistral-7b-instruct-v0.2 (GGUF - Q4)
+    * CPU Inference: @llama-cpp-python
+    * Image processing: @deepface 
+    * OCR: @pytesseract
+    * AI framework: Langchain
     * User Interface: Streamlit
-    * Music provider: Spotify
+    * Music provider: Spotify 🎶
     * Integration library: spotipy
-    * Image: deepface
-    * Music 
-    * 
     

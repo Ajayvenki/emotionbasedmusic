@@ -46,8 +46,16 @@ As the solution aims to generate the music recommendations with local inference.
 | `Langchain` | Langchain is an AI framework which is used to create an application with LLM's. In this use case, Langchain is used to create & formalize the prompt templates |
 
 ## Challenges:
-It would have been a simpler approach if the solution was hosted on a cloud or a hybrid cloud (As we pay for each inference and models). But, the whole aim was to explore the capabilities of the generative ai on a limited resources, it was way challenging to implement the solution. Jotting down few significant one:
-- 
+It would have been a much simpler approach if the solution was hosted on a cloud or a hybrid cloud (As we pay for each inference and models). But, the whole aim was to explore the capabilities of the generative ai on a limited resources, it was way challenging to implement the solution. Jotting down few significant one:
+
+- Bug on Ctransformers : My initial thoughts were to use ctransformers instead of llama.cpp due to its support on various model formats. But due to a bug encounter in the latest version of ctransformers https://github.com/marella/ctransformers/issues/211, which stand unresolved i had to choose llama.cpp as a better alternative. Regardless of the ctransformer versions which are compatible with python 3.12, the bug exists.
+  
+- LlamaCpp via langchain : LlamaCpp is available as a wrapper in langchain which utilizes llama-cpp-python. For the ease of langchain ecosytem, i used the wrapper. But the performance was so poor which tool ~5 minutes to display the output. Therefore, llama-cpp-python was used directly.
+  
+- Compatiblity issues : As the set up includes a number of dependent libraries (ex: deepface requires transformers,pytorch etc). There was a conflict while installing one on the other.
+  It required a reinstallation of few dependencies. requirements are up to date.
+  
+- Spotify SDK : Music play/pause using the SDK would have been a great option. But it puts on additional complexities to include javascript which is not meant for streamlit. Upon several attempts, a decision was made to embed the playlist url in the result.
 
 ## Areas of improvement:
 ## Demo:

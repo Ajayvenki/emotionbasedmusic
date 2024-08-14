@@ -40,7 +40,10 @@ As the solution aims to generate the music recommendations with local inference.
 | `Model` | Open source model: `Mistral 7b`. (a) Free to use (b) GGUF Quantized model Q4 for CPU inference (c) Feasible for local development (d) Reasonably efficient & expected output|
 | `llama-cpp-python` | Main use of llama-cpp is to enable LLM inference with minimal setup and state-of-the-art performance on a wide variety of hardware locally. `llama-cpp-python is a python binding on llama.cpp. As the solution is hosted locally, llama.cpp will extensively use the available cpu/gpu to generate a search.
 | `deepface` | Deepface is an facial recognition system which process & analyse the image to retrieve age, gender, emotion etc. It is Open source and widely used across different real time systems. Choice of this library is ease of use and high accuracy. Though, cloud based services provide a higher accuracy. It comes with additional cost |
-|||
+|`pytesseract`| A python wrapper for Google tesseract OCR engine. Major advantage falls on the accuracy, flexibility from various sources |
+| `spotify` | Choice of spotify over youtube is because of free api access and the choice of available playlist. Youtube API comes with additional cost on Google projects |
+| `spotipy` | A python library which integrates and extracts the spotify music based on api requests. Spotify provides a SDK for development. Usage of the SDK's, will add complexities to enable javascript on the user interface, where streamlit is not meant for |
+| `Langchain` | Langchain is an AI framework which is used to create an application with LLM's. In this use case, Langchain is used to create & formalize the prompt templates |
 
 ## Challenges:
 ## Improvement areas:

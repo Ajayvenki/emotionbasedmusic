@@ -1,4 +1,4 @@
-# Emotion based music generator 🎹🥁
+# Emotion based music recommendation system 🎹🥁
 Generate a random music playlist 🎵 on Spotify 🎧 with music recommendations that empathize with your emotions or state of mind 🧠. This Generative AI 🤖 project, created for fun 🤩, perceives user emotions and recommends a tailored playlist.
 
 
@@ -7,8 +7,7 @@ Generate a random music playlist 🎵 on Spotify 🎧 with music recommendations
 ![image](https://github.com/user-attachments/assets/4db39657-a8e7-4930-b02f-acff95898778)
 
 
-## Use case: 
-Although it does not add any potential values to the business or solves a real time problems. It was fun to create a project based on generative AI models and concepts:
+It is an intelligent solution designed to analyze user emotions, either through explicit input (such as text descriptions) or implicit signals (like facial expressions or voice tone). Once the system identifies the user's emotional state, it generates tailored music recommendations from platforms like Spotify. The goal is to either enhance the user's current mood (for positive emotions) or provide calming, uplifting, or supportive music (for negative emotions). Although it does not add any potential values to the business or solves a real time problems. It was fun to create a project based on generative AI models and concepts:
 
     - In-House built 💼.
     - Private and secure 🔒.

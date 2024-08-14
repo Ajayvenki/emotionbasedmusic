@@ -31,5 +31,16 @@ To keep the solution very simple, the music generation does not honour the langu
     * Integration library: spotipy (calls spotify api)
     
 ## Design choice:
+As the solution aims to generate the music recommendations with local inference. The components were chosen deligently to provide an efficient search result with minimal resource availability and at no cost.
+
+| Components    | Reason for use |
+| ------------- | ------------- |
+| `Python`        | Easy & simple for this use case  |
+| `Streamlit` | Python native ecosystem, quick development for a straigh forward task  |
+| `Model` | Open source model: `Mistral 7b`. (a) Free to use (b) GGUF Quantized model Q4 for CPU inference (c) Feasible for local development (d) Reasonably efficient & expected output|
+| `llama-cpp-python` | Main use of llama-cpp is to enable LLM inference with minimal setup and state-of-the-art performance on a wide variety of hardware locally. `llama-cpp-python is a python binding on llama.cpp. As the solution is hosted locally, llama.cpp will extensively use the available cpu/gpu to generate a search.
+| `deepface` | Deepface is an facial recognition system which process & analyse the image to retrieve age, gender, emotion etc. It is Open source and widely used across different real time systems. Choice of this library is ease of use and high accuracy. Though, cloud based services provide a higher accuracy. It comes with additional cost |
+|||
+
 ## Challenges:
 ## Improvement areas:

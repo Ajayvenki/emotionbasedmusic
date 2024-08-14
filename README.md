@@ -1,7 +1,8 @@
 # Emotion based music generator 🎹🥁
 Generate a random music playlist 🎵 on spotify 🎧 for a personalized music experience based on your emotions or a state of mind 🧠. A Generative AI 🤖 project that was created for fun 🤩, which perceives the user empathy and recommend a playlist.
 
-![image](https://github.com/user-attachments/assets/92540611-859b-4710-9432-d750a820c45b)
+![image](https://github.com/user-attachments/assets/20f99707-3e5d-4f75-9d9f-6fb504ec4dca)
+
 
 
 ## Use case: 

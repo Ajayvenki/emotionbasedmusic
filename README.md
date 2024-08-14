@@ -57,5 +57,10 @@ It would have been a much simpler approach if the solution was hosted on a cloud
   
 - Spotify SDK : Music play/pause using the SDK would have been a great option. But it puts on additional complexities to include javascript which is not meant for streamlit. Upon several attempts, a decision was made to embed the playlist url in the result.
 
-## Areas of improvement:
+## Could be expanded to:
+* Music based on language, artist, region etc.
+* Receive inputs and process in different languages.
+* Capability to play pause on the website.
+* Use other open source libraries like Magenta to compose a music.
+
 ## Demo:

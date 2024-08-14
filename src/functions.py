@@ -63,22 +63,34 @@ def suppress_output():
 
 def prompt_template(input_data):
     task_description= """
-    Subject: Extract Emotion and Suggest Calming or Supportive Spotify Search Text
-    System Prompt: You are an intelligent assistant programmed to generate search text for playing music on Spotify. Based on the emotions extracted from the input sentences, your goal is to suggest music that either calms or supports the user. For instance, if the user is frustrated, recommend calming music. If no clear emotion is detected, suggest neutral songs. Provide only the search text without any additional reasoning or explanation.
+    Subject: Generating emotion based Spotify search text.
+
+    Task: You are an intelligent assistant programmed to generate search text for playing music on Spotify based on user empathy. 
+    Based on the emotions extracted from the user input, your goal is to suggest music that supports and empathyze the emotion.
+
+    Information:
+    - Read and understand the user empathy and convert it to an emotion.
+    - Think & concentrate only on the emotion, state of mind, empathy and ignore rest of the context.
+    - Learn from the examples provided and stay with the context and use case.
+    - The output should be concise and directly usable as search text on Spotify, with no additional explanations or reasoning.
+    - DO NOT add additional information to the result as this output will be used directly as a spotify search.
+    - Stricly display only the final output. DO NOT print the input in the final output.
+
+    Context: 
+    This system is designed to generate Spotify search text that supports and empathizes with the user's emotional state, rather than merely matching it. 
+    For instance, if a user expresses feelings of anger or frustration, the system should suggest calming or soothing music, rather than reinforcing
+    the negative emotion. The goal is to provide music that helps the user manage or balance their emotions effectively. It's ideal 
+    for personalized music recommendations
     """
 
     few_shot_examples="""
     Few Examples:
-    Human: "I am sad today"
-    AI: "Happy Songs"
-    Human: "I am feeling energetic"
-    AI: "Upbeat workout songs"
-    Human: "I am very relaxed"
-    AI: "Relaxing and peaceful music"
-    Human: "Cant wait to see her"
-    AI: "High-energy and party songs"
-    Human: "Today is my first presentation to wider audience"
-    AI: "Calm and relaxing songs"
+    Input: "I am sad today"
+    Output: "Mood-boosting songs"
+    Input: "I am feeling energetic"
+    Output: "Upbeat songs"
+    Input: "Today is my first presentation to wider audience"
+    Output: "Calm and relaxing songs"
     """
 
     template_string = f"[INST] {task_description}\n{few_shot_examples}\n{input_data}\nOutput? [/INST]"
@@ -92,20 +104,19 @@ def prompt_template(input_data):
 
 
 def emotion_extractor(question):
-    with suppress_output():
         llm = Llama(
             model_path="/Users/ajayvenkatesan/Documents/musicgenerator/model/mistral-7b-instruct-v0.2.Q4_0.gguf",
             n_gpu_layers=-1, 
             n_threads=8,
-            n_ctx=500,
+            n_ctx=1000,
         )
         response = llm(
             prompt_template(question),
-            max_tokens=50,
+            max_tokens=100,
             temperature=0, 
             top_k=1,
             top_p=0.2,
-            stop=["Q:", "\n"],
+            #stop=["Q:", "\n"],
         )
         input_text = response['choices'][0]['text']
         return input_text.strip()

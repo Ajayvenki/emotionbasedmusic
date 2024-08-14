@@ -66,5 +66,3 @@ It would have been a much simpler approach if the solution was hosted on a cloud
 * Use other open source libraries like Magenta to compose a music.
 
 ## Demo:
-[Uploading streamlit-streamlit-2024-08-14-17-08-87.webm…]()
-

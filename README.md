@@ -46,4 +46,8 @@ As the solution aims to generate the music recommendations with local inference.
 | `Langchain` | Langchain is an AI framework which is used to create an application with LLM's. In this use case, Langchain is used to create & formalize the prompt templates |
 
 ## Challenges:
-## Improvement areas:
+It would have been a simpler approach if the solution was hosted on a cloud or a hybrid cloud (As we pay for each inference and models). But, the whole aim was to explore the capabilities of the generative ai on a limited resources, it was way challenging to implement the solution. Jotting down few significant one:
+- 
+
+## Areas of improvement:
+## Demo:

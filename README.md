@@ -17,8 +17,7 @@ To keep the solution very simple, the music generation does not honour the langu
     * Model: mistral-7b-instruct-v0.2 (GGUF - Q4)
     * UI: Streamlit
     * Music provider: Spotify
-    * Voice:  
-    * Image 
+    * Image: [@deepface]
     * 
     * 
     

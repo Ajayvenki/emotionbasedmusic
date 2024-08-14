@@ -1,5 +1,5 @@
 # Emotion based music generator 🎹🥁
-Generate a random music playlist 🎵 on spotify 🎧 for a personalized music experience based on your emotions or a state of mind 🧠. A Generative AI 🤖 project that was created for fun 🤩.
+Generate a random music playlist 🎵 on spotify 🎧 for a personalized music experience based on your emotions or a state of mind 🧠. A Generative AI 🤖 project that was created for fun 🤩, which perceives the user empathy and recommend a playlist.
 
 ## Use case: 
 Although it does not add any potential values to the business or solves a real time problems. It was fun to create a project based on generative AI models and concepts:
@@ -9,15 +9,17 @@ Although it does not add any potential values to the business or solves a real t
     - Zero 0️⃣ cost 💸 on the inference. 
     - Captures the emotion in various mediums (Text, voice, image, attachment)
     - Runs based on open source models🤖 (Mistal-7B)
+    - OCR: Capable to extract emotions from hand written ✍🏼 images
 
 To keep the solution very simple, the music generation does not honour the languages, choice of music, artist selection etc.
 
 ## Technical specifications:
     * Language: Python. 
     * Model: mistral-7b-instruct-v0.2 (GGUF - Q4)
-    * UI: Streamlit
+    * User Interface: Streamlit
     * Music provider: Spotify
-    * Image: https://github.com/serengil/deepface
-    * 
+    * Integration library: spotipy
+    * Image: deepface
+    * Music 
     * 
     

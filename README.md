@@ -13,4 +13,12 @@ Although it does not add any potential values to the business or solves a real t
 To keep the solution very simple, the music generation does not honour the languages, choice of music, artist selection etc.
 
 ## Technical specifications:
-
+    * Language: Python. 
+    * Model: mistral-7b-instruct-v0.2 (GGUF - Q4)
+    * UI: Streamlit
+    * Music provider: Spotify
+    * Voice:  
+    * Image 
+    * 
+    * 
+    

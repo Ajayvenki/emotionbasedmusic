@@ -3,6 +3,7 @@ Generate a random music playlist 🎵 on spotify 🎧 for a personalized music e
 
 ![image](https://github.com/user-attachments/assets/20f99707-3e5d-4f75-9d9f-6fb504ec4dca)
 
+![image](https://github.com/user-attachments/assets/4db39657-a8e7-4930-b02f-acff95898778)
 
 
 ## Use case: 

@@ -1,4 +1,4 @@
-# Emotion based music recommendation system 🎹🥁
+[streamlit-streamlit-2024-08-14-17-08-87.webm](https://github.com/user-attachments/assets/2fb2871a-1ad1-4999-bdf2-6cf86700d69a)# Emotion based music recommendation system 🎹🥁
 Generate a random music playlist 🎵 on Spotify 🎧 with music recommendations that empathize with your emotions or state of mind 🧠. This Generative AI 🤖 project, created for fun 🤩, perceives user emotions and recommends a tailored playlist.
 
 
@@ -66,3 +66,5 @@ It would have been a much simpler approach if the solution was hosted on a cloud
 * Use other open source libraries like Magenta to compose a music.
 
 ## Demo:
+[Uploading streamlit-streamlit-2024-08-14-17-08-87.webm…]()
+

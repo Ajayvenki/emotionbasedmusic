@@ -66,7 +66,7 @@ It would have been a much simpler approach if the solution was hosted on a cloud
 * Use other open source libraries like Magenta to compose a music.
 
 ## Demo:
-[Untitled Video August 15, 2024 12_28 PM.webm](https://github.com/user-attachments/assets/890eab86-c30c-4c3e-81fd-c9a0b9a819b8)
+
 
 ## Caution ⚠️:
  - Generative AI is experimental and does not provide 💯% accuracy even with 450B parameters 😉

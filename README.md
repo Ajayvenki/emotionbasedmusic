@@ -67,7 +67,7 @@ It would have been a much simpler approach if the solution was hosted on a cloud
 
 ## Demo:
 
-[Demo video 🎥.webm](https://github.com/user-attachments/assets/ed2de61e-c233-4763-ac60-bf3bf2be6d5d)
+https://github.com/user-attachments/assets/bebc128f-6f4d-43c7-8f6f-06cc8c0d2117
 
 ## Caution ⚠️:
  - Generative AI is experimental and does not provide 💯% accuracy even with 450B parameters 😉

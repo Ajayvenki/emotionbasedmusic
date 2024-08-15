@@ -117,11 +117,6 @@ def generate_search_text(mood):
     # Decode and return the result
     search_text = tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
     return search_text
-
-# Example usage
-mood = "anxious"
-search_text = generate_search_text(mood)
-print(search_text)
 '''
 
 '''

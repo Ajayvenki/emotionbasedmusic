@@ -66,3 +66,9 @@ It would have been a much simpler approach if the solution was hosted on a cloud
 * Use other open source libraries like Magenta to compose a music.
 
 ## Demo:
+
+## Caution ⚠️:
+ - Generative AI is experimental and does not provide 💯% accuracy even with 450B parameters 😉
+ - For the simpler use case, smaller model trained with 7 billion parameters was chosen. This may not provide accurate results all the time. However, the model has been tamed to a greater extent with prompt engineering techniques to give the expected results.
+ - Fine tuning may be an overkill as the number of examples are too low.
+ - Passing on too many examples in a prompt would result in heavy latency.

@@ -105,18 +105,18 @@ def prompt_template(input_data):
 
 def emotion_extractor(question):
         llm = Llama(
-            model_path="/Users/ajayvenkatesan/Documents/musicgenerator/model/mistral-7b-instruct-v0.2.Q4_0.gguf",
+            model_path=os.environ.get("MODEL_PATH"),
             n_gpu_layers=-1, 
             n_threads=8,
             n_ctx=1000,
         )
         response = llm(
             prompt_template(question),
-            max_tokens=100,
+            max_tokens=40,
             temperature=0, 
             top_k=1,
             top_p=0.2,
-            #stop=["Q:", "\n"],
+            stop=["Q:", "\n"],
         )
         input_text = response['choices'][0]['text']
         return input_text.strip()

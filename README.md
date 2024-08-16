@@ -37,13 +37,18 @@ As the solution aims to generate the music recommendations with local inference.
 | ------------- | ------------- |
 | `Python`        | Easy & simple for this use case  |
 | `Streamlit` | Python native ecosystem, quick development for a straigh forward task  |
-| `Model` | Open source model: `Mistral 7b`. (a) Free to use (b) GGUF Quantized model Q4 for CPU inference (c) Feasible for local development (d) Reasonably efficient & expected output|
+| `Model` | Open source model: `Mistral 7b`. (a) Free to use (b) GGUF Quantized model Q4 for CPU inference (c) Accurate results compared to llama 7b (d) Reasonably efficient & expected output (e) Advanced models are overhead for in house build|
 | `llama-cpp-python` | Main use of llama-cpp is to enable LLM inference with minimal setup and state-of-the-art performance on a wide variety of hardware locally. `llama-cpp-python is a python binding on llama.cpp. As the solution is hosted locally, llama.cpp will extensively use the available cpu/gpu to generate a search.
 | `deepface` | Deepface is an facial recognition system which process & analyse the image to retrieve age, gender, emotion etc. It is Open source and widely used across different real time systems. Choice of this library is ease of use and high accuracy. Though, cloud based services provide a higher accuracy. It comes with additional cost |
 |`pytesseract`| A python wrapper for Google tesseract OCR engine. Major advantage falls on the accuracy, flexibility from various sources |
 | `spotify` | Choice of spotify over youtube is because of free api access and the choice of available playlist. Youtube API comes with additional cost on Google projects |
 | `spotipy` | A python library which integrates and extracts the spotify music based on api requests. Spotify provides a SDK for development. Usage of the SDK's, will add complexities to enable javascript on the user interface, where streamlit is not meant for |
 | `Langchain` | Langchain is an AI framework which is used to create an application with LLM's. In this use case, Langchain is used to create & formalize the prompt templates |
+
+## Setup:
+* Clone & Install the requirements.
+* Create a spotify [credential](https://developer.spotify.com/dashboard) for authentication
+* Run the streamlit application
 
 ## Challenges:
 It would have been a much simpler approach if the solution was hosted on a cloud or a hybrid cloud (As we pay for each inference and models). But, the whole aim was to explore the capabilities of the generative ai on a limited resources, it was way challenging to implement the solution. Jotting down few significant one:
@@ -64,10 +69,10 @@ It would have been a much simpler approach if the solution was hosted on a cloud
 * Use other open source libraries like Magenta to compose a music.
 
 ## Caution ⚠️:
- - Generative AI is experimental and does not provide 💯% accuracy even with 450B parameters 😉
- - For the simpler use case, smaller model trained with 7 billion parameters was chosen. This may not provide accurate results all the time. However, the model has been tamed to a greater extent with prompt engineering techniques to give the expected results.
+ - Generative AI is experimental and does not provide 💯% accuracy.
+ - For the simpler use case, smaller model trained with 7 billion parameters was chosen. This may not provide accurate results everytime. However, the model has been tamed to a greater extent with prompt engineering techniques to give the expected results.
  - Fine tuning may be an overkill as the number of examples are too low.
- - Passing on too many examples in a prompt would result in heavy latency.
+ - Passing on too many examples in a prompt would result in severe latency.
 
 ## Demo:
 

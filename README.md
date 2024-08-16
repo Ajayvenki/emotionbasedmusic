@@ -22,7 +22,7 @@ To keep the solution very simple, the music generation does not honour the langu
 ## Technical specifications:
     * Language: Python 🐍
     * Model: mistral-7b-instruct-v0.2 (GGUF - Q4)
-    * CPU Inference: @llama-cpp-python
+    * CPU Inference: [llama-cpp-python](https://github.com/abetlen/llama-cpp-python)
     * Image processing: @deepface 
     * OCR: @pytesseract
     * AI framework: Langchain

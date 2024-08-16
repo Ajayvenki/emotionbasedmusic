@@ -8,7 +8,6 @@ The goal is to either enhance the feelings (for positive emotions) or provide ca
 
 ![compressed](https://github.com/user-attachments/assets/e75a0dca-c17c-477e-a0e7-ffd5c7dbe488) 
 ![compressed02](https://github.com/user-attachments/assets/1cd285df-a813-41e0-958a-5a4b12bf22c9)
-![GIF (1)](https://github.com/user-attachments/assets/3988d8ba-2c43-4e20-8750-ce3304e0b708)
 
 
 ## Key Note:
